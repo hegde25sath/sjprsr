@@ -1,6 +1,6 @@
 # Sathvik's JSON Parser (`sjprsr`)
 
-A JSON parser written in C adhering to RFC 8259.
+A JSON parser written in C adhering to [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
 
 Work in progress.
 
@@ -11,4 +11,4 @@ Work in progress.
 
 ## Acknowledgements
 
-Makes use of nst's comprehensive JSON parsing test suite.
+Makes use of nst's comprehensive [JSON parsing test suite.](https://github.com/nst/JSONTestSuite/tree/master)
