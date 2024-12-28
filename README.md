@@ -11,4 +11,4 @@ Work in progress.
 
 ## Acknowledgements
 
-Makes use of nct's comprehensive JSON parsing test suite.
+Makes use of nst's comprehensive JSON parsing test suite.
