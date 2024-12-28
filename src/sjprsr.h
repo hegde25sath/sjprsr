@@ -15,5 +15,6 @@
 /* Structure declarations */
 
 /* Function prototypes */
+void help();
 
 #endif /* !SJPRSR_H_SEEN */

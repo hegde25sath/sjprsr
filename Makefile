@@ -34,7 +34,7 @@ uninstall:
 	-rm -rf $(DESTDIR)$(bindir)/$(PROGNAME)
 
 sjprsr.o:
-	$(CC) -c $(CFLAGS) sjprsr.c
+	$(CC) -c $(CFLAGS) $(srcdir)/sjprsr.c
 
 $(PROGNAME): sjprsr.o
 	$(CC) -o sjprsr $(CFLAGS) sjprsr.o

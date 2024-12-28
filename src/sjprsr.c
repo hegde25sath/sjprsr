@@ -26,5 +26,19 @@ enum {
   ARRAY,
   NUMBER,
   STRING
+};
+
+int main() {
+  return 0;
 }
+
+/*
+ * This functions prints usage help options when the user is not using the
+ * tool properly. E.g, 
+ *
+ */
+
+void help() {
+  printf("Usage: sjprsr [JSON FILE]");
+} /* help() */
 
