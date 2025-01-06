@@ -1,6 +1,7 @@
 # Sathvik's JSON Parser (`sjprsr`)
 
-A JSON parser written in C adhering to [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
+A JSON parser written in C adhering to [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259).
+Returns VALID_JSON or INVALID_JSON (see `sjprsr.h`).
 
 Work in progress.
 Has only been tested on Linux (Fedora 41 x86-64).
@@ -26,4 +27,4 @@ Makes use of nst's comprehensive [JSON parsing test suite.](https://github.com/n
 GNU C Preprocessor Manual
 GNU C Libraray Reference Manual
 GNU Make Manual
-
+Crafting Interpreters, Nystrom

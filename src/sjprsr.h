@@ -8,6 +8,7 @@
 /* Constant definitions */
 #define INVALID_JSON (0)
 #define VALID_JSON (1)
+// #define MAX_CHARS (10000)
 
 /* Exit codes */
 #define WRONG_ARGS (2)
@@ -16,31 +17,32 @@
 /* Structure declarations */
 
 typedef enum token_type {
-  BEGIN_ARRAY,
-  BEGIN_OBJECT,
-  END_ARRAY,
-  END_OBJECT,
-  NAME_SEPARATOR,
-  VALUE_SEPARATOR,
-  FALSE,
-  NIL,
-  TRUE,
-  OBJECT,
-  ARRAY,
-  NUMBER,
-  STRING,
-  ENDFILE
+  TOKEN_BEGIN_ARRAY,
+  TOKEN_BEGIN_OBJECT,
+  TOKEN_END_ARRAY,
+  TOKEN_END_OBJECT,
+  TOKEN_NAME_SEPARATOR,
+  TOKEN_VALUE_SEPARATOR,
+  TOKEN_FALSE,
+  TOKEN_NIL,
+  TOKEN_TRUE,
+  TOKEN_OBJECT,
+  TOKEN_ARRAY,
+  TOKEN_NUMBER,
+  TOKEN_STRING,
+  TOKEN_EOF
 } token_type;
 
 typedef struct token {
   token_type type;
-  char* lexeme;
-  int line;
+  int start;
+  int end;
 } token;
 
 
 /* Function prototypes */
 void help();
-int parse(char* file);
+void invalid_usage(const char* invalid_option);
+char* read_file(const char* );
 
 #endif /* !SJPRSR_H_SEEN */
